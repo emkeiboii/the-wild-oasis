@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
 
@@ -50,8 +52,8 @@ function BookingRow({
 }) {
   const statusToTagName = {
     unconfirmed: "blue",
-    "checked-in": "green",
-    "checked-out": "silver",
+    checkedIn: "green",
+    checkedOut: "silver",
   };
 
   return (
@@ -76,7 +78,9 @@ function BookingRow({
         </span>
       </Stacked>
 
-      <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
+      <Tag type={statusToTagName[status]}>
+        {status.replace("checked", "checked ")}
+      </Tag>
 
       <Amount>{formatCurrency(totalPrice)}</Amount>
     </Table.Row>
