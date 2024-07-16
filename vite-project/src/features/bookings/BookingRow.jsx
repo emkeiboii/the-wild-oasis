@@ -52,8 +52,8 @@ function BookingRow({
 }) {
   const statusToTagName = {
     unconfirmed: "blue",
-    checkedIn: "green",
-    checkedOut: "silver",
+    "checked-in": "green",
+    "checked-out": "silver",
   };
 
   return (
@@ -78,9 +78,7 @@ function BookingRow({
         </span>
       </Stacked>
 
-      <Tag type={statusToTagName[status]}>
-        {status.replace("checked", "checked ")}
-      </Tag>
+      <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
 
       <Amount>{formatCurrency(totalPrice)}</Amount>
     </Table.Row>
