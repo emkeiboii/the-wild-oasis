@@ -105,15 +105,14 @@ function CabinRow({ cabin }) {
                   <Menus.Button icon={<HiPencil />}>Edit</Menus.Button>
                 </Modal.Open>
 
+                <Modal.Window name="edit">
+                  <CreateCabinForm cabinToEdit={cabin} />
+                </Modal.Window>
                 {/* DELETE */}
                 <Modal.Open opens="delete">
                   <Menus.Button icon={<HiTrash />}>Delete</Menus.Button>
                 </Modal.Open>
               </Menus.List>
-
-              <Modal.Window name="edit">
-                <CreateCabinForm cabinToEdit={cabin} />
-              </Modal.Window>
 
               <Modal.Window name="delete">
                 <ConfirmDelete
