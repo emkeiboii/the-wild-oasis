@@ -1,20 +1,20 @@
 /* eslint-disable no-unused-vars */
 import { useMoveBack } from "../../hooks/useMoveBack";
 import { useBooking } from "../bookings/useBooking";
+import { useCheckIn } from "./useCheckIn";
+import { useSettings } from "../settings/useSettings";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
-import BookingDataBox from "../../features/bookings/BookingDataBox";
+import { formatCurrency } from "../../utils/helpers";
 
+import BookingDataBox from "../../features/bookings/BookingDataBox";
 import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
 import ButtonGroup from "../../ui/ButtonGroup";
 import Button from "../../ui/Button";
 import ButtonText from "../../ui/ButtonText";
 import Spinner from "../../ui/Spinner";
-import { useEffect, useState } from "react";
 import Checkbox from "../../ui/Checkbox";
-import { formatCurrency } from "../../utils/helpers";
-import { useCheckIn } from "./useCheckIn";
-import { useSettings } from "../settings/useSettings";
 
 const Box = styled.div`
   /* Box */

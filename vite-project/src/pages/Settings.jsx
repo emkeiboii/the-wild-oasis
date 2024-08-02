@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import UpdateSettingsForm from "../features/settings/UpdateSettingsForm";
-import { useSettings } from "../features/settings/useSettings";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
 

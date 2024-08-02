@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import { formatCurrency } from "../../utils/helpers";
 import {
   HiOutlineBriefcase,
   HiOutlineCalendar,
@@ -7,7 +8,6 @@ import {
 } from "react-icons/hi";
 import Stat from "./Stat";
 import { HiOutlineBanknotes } from "react-icons/hi2";
-import { formatCurrency } from "../../utils/helpers";
 
 function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   //calculate number of booking

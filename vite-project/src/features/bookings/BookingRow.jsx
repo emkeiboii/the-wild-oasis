@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+
 import { useDeleteBooking } from "./useDeleteBooking";
 import { useCheckOut } from "../check-in-out/useCheckOut";
 import { useNavigate } from "react-router-dom";
@@ -49,11 +49,9 @@ const Amount = styled.div`
 function BookingRow({
   booking: {
     id: bookingId,
-    created_at,
     startDate,
     endDate,
     numNights,
-    numGuests,
     totalPrice,
     status,
     guests: { fullName: guestName, email },

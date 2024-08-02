@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import styled from "styled-components";
 import { useRecentBookings } from "./useRecentBookings";
-import Spinner from "../../ui/Spinner";
 import { useRecentStays } from "./useRecentStays";
-import Stats from "./Stats";
 import { useCabins } from "../cabins/useCabins";
+import styled from "styled-components";
+import Spinner from "../../ui/Spinner";
+import Stats from "./Stats";
 import SalesChart from "./SalesChart";
 import DurationChart from "./DurationChart";
 import Today from "../check-in-out/TodayActivity";

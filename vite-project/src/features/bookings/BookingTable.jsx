@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useBookings } from "./useBookings";
 import BookingRow from "./BookingRow";
 import Table from "../../ui/Table";

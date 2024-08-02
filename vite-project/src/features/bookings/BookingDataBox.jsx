@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import styled from "styled-components";
 import { format, isToday } from "date-fns";
+import { formatDistanceFromNow, formatCurrency } from "../../utils/helpers";
+import styled from "styled-components";
 import {
   HiOutlineChatBubbleBottomCenterText,
   HiOutlineCheckCircle,
@@ -10,8 +11,6 @@ import {
 
 import DataItem from "../../ui/DataItem";
 import { Flag } from "../../ui/Flag";
-
-import { formatDistanceFromNow, formatCurrency } from "../../utils/helpers";
 
 const StyledBookingDataBox = styled.section`
   /* Box */

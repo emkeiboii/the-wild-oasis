@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import Button from "../../ui/Button";
 import { useCheckOut } from "./useCheckOut";
+import Button from "../../ui/Button";
 
 function CheckoutButton({ bookingId }) {
   const { checkOut, isCheckOuting } = useCheckOut();

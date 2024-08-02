@@ -1,16 +1,14 @@
-/* eslint-disable no-unused-vars */
+import { useSettings } from "./useSettings";
+import { useUpdateSetting } from "./useUpdateSetting";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
 import Spinner from "../../ui/Spinner";
-import { useSettings } from "./useSettings";
-import { useUpdateSetting } from "./useUpdateSetting";
 
 function UpdateSettingsForm() {
   const { isUpdating, updateSetting } = useUpdateSetting();
   const {
     isLoading,
-    error,
     settings: {
       minBookingLength,
       maxBookingLength,

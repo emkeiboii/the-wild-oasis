@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import { useForm, useFormState } from "react-hook-form";
 import { addCabin } from "../../services/apiCabins";
 import {

@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { useUser } from "./useUser";
+import styled from "styled-components";
 
 const StyledUserAvatar = styled.div`
   display: flex;
