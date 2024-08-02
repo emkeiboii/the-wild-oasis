@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 :root {
 
-  &, &.dark-mode{
+ &.dark-mode{
     
     --color-grey-0: #18212f;
     --color-grey-50: #111827;
@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
     
       }
 
-  &.light-mode{
+      &, &.light-mode{
 
   /* Grey */
   --color-grey-0: #fff;
